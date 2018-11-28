@@ -1,0 +1,21 @@
+.blog-tags-w {
+  width: 80%;
+  .blog-tags-c {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    margin-top: 20px;
+    .blog-tags-p {
+      margin: 5px 5px;
+      .blog-tags-i {
+        margin: 0;
+        margin-left: 15px;
+        line-height: 1.5 !important;
+      }
+    }
+  }
+  .tags-none {
+    display: flex;
+    justify-content: center;
+  }
+}

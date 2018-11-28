@@ -1,0 +1,62 @@
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+.editor-content-area[contenteditable=true] {
+  color : #000000;
+}
+.editor-content-w {
+  font-size: 1.2rem;
+  position: relative;
+  border: 0 !important;
+  width: 100%;
+  outline: 1px solid #FFFFFF;
+  cursor: text;
+  hr {
+    margin-top: 52px;
+    margin-bottom: 42px;
+    display: block;
+    border: 0;
+    text-align: center;
+    overflow: visible;
+    box-sizing: content-box;
+    height: 0;
+  }
+  hr::before {
+    --x-height-multiplier: 0.342;
+    --baseline-multiplier: 0.22;
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: .6em;
+    content: '...';
+    display: inline-block;
+    margin-left: .6em;
+    color: rgba(0,0,0,.68);
+    position: relative;
+    top: -30px;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  pre {
+    background-color: rgb(235, 231, 231);
+    padding: 20px;
+    margin: 15px;
+    overflow: auto;
+    color: #333333;
+    white-space: pre-wrap;
+  }
+  blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid rgb(207, 204, 204);
+  }
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,53 @@
+// $desktop-l-width	: 1440px;
+$tablet-l-width		: 1024px;
+$tablet-s-width		: 768px;
+$mob-l-width		: 640px;
+$mob-m-width		: 425px;
+// $mob-s-width		: 375px;
+[v-cloak] {
+  display: none;
+}
+.blog-about-c {
+  @media screen and (min-width: #{$tablet-l-width}) {
+    // max-width: 70%;
+    max-width: 100%;
+    margin: auto;
+  }
+  // 스크린이 최대 얼마 일때
+  @media screen and (max-width: #{$tablet-s-width}) {
+    max-width: 88%;
+    margin: auto;
+  }
+  @media screen and (max-width: #{$mob-m-width}) {
+    max-width: 100%;
+  }
+}
+
+
+#blog-about-box {
+  @media screen and (min-width: #{$mob-l-width}) {
+    display: inline-block;
+  }
+  margin: 0.5rem;
+  .card {
+    width: 20rem;
+    margin: auto;
+  }
+  .card-img-top {
+    margin: 2rem auto;
+    border-radius: 50%;
+    // border-top-left-radius: calc(0.25rem - 1px);
+    // border-top-right-radius: calc(0.25rem - 1px);
+    width: 77%;
+  }
+  .about-social {
+    flex-direction: row;
+  }
+  .about-social li{
+    padding: 0 0.5rem;
+  }
+  .list-toggle-button {
+    display: block;
+    text-align: right;
+  }
+}

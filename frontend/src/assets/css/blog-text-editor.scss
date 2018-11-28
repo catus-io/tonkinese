@@ -1,0 +1,102 @@
+.blog-text-editor-w {
+  width: 100%;
+  margin-bottom: 50px;
+  .line-helper-w {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity .8s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
+    }
+    .slide-fade-enter-active {
+      transition: all .5s ease;
+    }
+    .slide-fade-leave-active {
+      transition: all .5s ease;
+    }
+    .slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active below version 2.1.8 */ {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    .line-helper-menu-w {
+      display: flex;
+      flex-direction: column;
+      button {
+        margin-top: 7px;
+      }
+    }
+    .line-helper-button, .line-helper-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      width: 20px;
+      height: 20px;
+      border: 0;
+      border-radius: 5px;
+      transition: background-color .8s, color .7s;
+    }
+    .line-helper-button.active {
+      background-color: #FFFFFF !important;
+      color: #03a87c !important;
+    }
+    .line-helper-button {
+      background-color: #03a87c;
+      color: #FFFFFF;
+    }
+    .line-helper-menu {
+      position: relative;
+      background-color: #03a87c;
+      color: #FFFFFF;
+      margin: 0;
+      cursor: pointer;
+      .file-input-icon {
+        position: absolute;
+      }
+      input {
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+  }
+  .blog-text-editor-c {
+    .blog-text-editor-helper-c {
+      display: flex;
+      position: absolute;
+      font-size: 1.5rem;
+      background-color: #03a87c;
+      z-index: 1;
+      opacity: 0;
+    }
+    .blog-text-editor-helper-c.active {
+      transition: opacity .5s, top .2s, left .2s;
+      opacity: 1;
+    }
+    .blog-text-editor-helper-c:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top-color: #03a87c;
+      border-bottom: 0;
+      margin-left: -10px;
+      margin-bottom: -10px;
+    }
+    button {
+      width: 40px;
+      height: 40px;
+      border: none !important;
+      border-radius: 0 !important;
+      color: #FFFFFF !important;
+      background-color: #03a87c !important;
+      outline: 0px solid #FFFFFF !important;
+    }
+  }
+}

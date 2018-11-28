@@ -1,0 +1,22 @@
+{
+  "name": "catus-blog-backend",
+  "version": "1.0.0",
+  "description": "catus official blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Kai",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.342.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb": "^3.1.6"
+  }
+}

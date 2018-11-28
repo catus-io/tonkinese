@@ -1,0 +1,41 @@
+.blog-list-c {
+  width: 80%;
+  .blog-list-p {
+    margin-top: 20px;
+    a {
+      color: #666666;
+    }
+    a:hover {
+      color: #444444;
+    }
+    .card {
+      img {
+      }
+      .card-body {
+        .card-text {
+          display: flex;
+          .blog-tag-list-c {
+            margin-right: 5px; 
+            a {
+              color:#03a87c;
+            }
+          }
+        }
+      }
+    }
+  }
+  .post-none {
+    display: flex;
+    justify-content: center;
+    .post-none-msg {
+      .card-body{
+        display: flex;
+        justify-content: center;
+        .card-title {
+          margin: 0;
+          color: #666666;
+        }
+      }
+    }
+  }
+}
